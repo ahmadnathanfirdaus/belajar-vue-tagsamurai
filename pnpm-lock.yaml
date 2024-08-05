@@ -26,6 +26,9 @@ importers:
       postcss:
         specifier: 8.4.40
         version: 8.4.40
+      primevue:
+        specifier: ^4.0.4
+        version: 4.0.4(vue@3.4.35(typescript@5.1.6))
       single-spa-vue:
         specifier: 3.0.0
         version: 3.0.0
@@ -1058,6 +1061,24 @@ packages:
 
   '@polka/url@1.0.0-next.25':
     resolution: {integrity: sha512-j7P6Rgr3mmtdkeDGTe0E/aYyWEWVtc5yFXtHCRHs28/jptDEWfaVOc5T7cblqy1XKPPfCxJc/8DwQ5YgLOZOVQ==}
+
+  '@primeuix/styled@0.0.5':
+    resolution: {integrity: sha512-pVoGn/uPkVm/DyF3TR3EmH/pL/dP4nR42FcYbVduFq9VfO3KVeOEqvcCULHXos66RZO9MCbCFUoLy6ctf9GUGQ==}
+    engines: {node: '>=12.11.0'}
+
+  '@primeuix/utils@0.0.5':
+    resolution: {integrity: sha512-ntUiUgtRtkF8KuaxHffzhYxQxoXk6LAPHm7CVlFjdqS8Rx8xRkLkZVyo84E+pO2hcNFkOGVP/GxHhQ2s94O8zA==}
+    engines: {node: '>=12.11.0'}
+
+  '@primevue/core@4.0.4':
+    resolution: {integrity: sha512-xGD2hNYL4WLnkWuoxIjMIqEXiydYpFovDuCMHMWRl3yb/AFJcHpyZpUlgZ2HnJydA5ZsLS00sGsPHEoV5u2M8A==}
+    engines: {node: '>=12.11.0'}
+    peerDependencies:
+      vue: ^3.0.0
+
+  '@primevue/icons@4.0.4':
+    resolution: {integrity: sha512-eHOuO5jIv/qb3mpo3m1qpDKJxw/B8ZFpAcsKxV4uWhAXkxWo/afmykGO38PVabKc3SSai8bq1zFVXPA1w0cg9g==}
+    engines: {node: '>=12.11.0'}
 
   '@rollup/rollup-android-arm-eabi@4.19.2':
     resolution: {integrity: sha512-OHflWINKtoCFSpm/WmuQaWW4jeX+3Qt3XQDepkkiFTsoxFc5BpF3Z5aDxFZgBqRjO6ATP5+b1iilp4kGIZVWlA==}
@@ -4368,6 +4389,10 @@ packages:
     resolution: {integrity: sha512-66hKPCr+72mlfiSjlEB1+45IjXSqvVAIy6mocupoww4tBFE9R9IhwwUGoI4G++Tc9Aq+2rxOt0RFU6gPcrte0A==}
     engines: {node: '>= 0.8'}
 
+  primevue@4.0.4:
+    resolution: {integrity: sha512-1moEddbczJ1+yEyfeYQk3xOQB64iCjjM//f+HSXs6YrKVVC0QjPFx9XPNXrr2JjHlp+6D7EpPZtsmcrfA9jWkA==}
+    engines: {node: '>=12.11.0'}
+
   process-nextick-args@2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
 
@@ -6497,6 +6522,25 @@ snapshots:
   '@pkgr/core@0.1.1': {}
 
   '@polka/url@1.0.0-next.25': {}
+
+  '@primeuix/styled@0.0.5':
+    dependencies:
+      '@primeuix/utils': 0.0.5
+
+  '@primeuix/utils@0.0.5': {}
+
+  '@primevue/core@4.0.4(vue@3.4.35(typescript@5.1.6))':
+    dependencies:
+      '@primeuix/styled': 0.0.5
+      '@primeuix/utils': 0.0.5
+      vue: 3.4.35(typescript@5.1.6)
+
+  '@primevue/icons@4.0.4(vue@3.4.35(typescript@5.1.6))':
+    dependencies:
+      '@primeuix/utils': 0.0.5
+      '@primevue/core': 4.0.4(vue@3.4.35(typescript@5.1.6))
+    transitivePeerDependencies:
+      - vue
 
   '@rollup/rollup-android-arm-eabi@4.19.2':
     optional: true
@@ -10111,6 +10155,15 @@ snapshots:
       renderkid: 3.0.0
 
   pretty-hrtime@1.0.3: {}
+
+  primevue@4.0.4(vue@3.4.35(typescript@5.1.6)):
+    dependencies:
+      '@primeuix/styled': 0.0.5
+      '@primeuix/utils': 0.0.5
+      '@primevue/core': 4.0.4(vue@3.4.35(typescript@5.1.6))
+      '@primevue/icons': 4.0.4(vue@3.4.35(typescript@5.1.6))
+    transitivePeerDependencies:
+      - vue
 
   process-nextick-args@2.0.1: {}
 

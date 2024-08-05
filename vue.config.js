@@ -12,6 +12,7 @@ module.exports = defineConfig({
     resolve: {
       alias: {
         '@': resolve(__dirname, 'src'),
+        'presets': resolve(__dirname, 'src/presets'),
       },
     },
     devServer: {

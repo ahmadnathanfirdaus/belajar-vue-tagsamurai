@@ -21,6 +21,9 @@
       "@/*": [
         "src/*"
       ],
+      "presets": [
+        "src/presets/index.js"
+      ],
     },
     "lib": [
       "esnext",

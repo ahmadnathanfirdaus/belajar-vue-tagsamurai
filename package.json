@@ -24,6 +24,7 @@
     "core-js": "3.37.1",
     "i18n": "0.15.1",
     "postcss": "8.4.40",
+    "primevue": "^4.0.4",
     "single-spa-vue": "3.0.0",
     "systemjs-webpack-interop": "2.3.7",
     "tailwindcss": "3.4.7",
