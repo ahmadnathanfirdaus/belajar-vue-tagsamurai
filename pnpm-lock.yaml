@@ -26,6 +26,9 @@ importers:
       postcss:
         specifier: 8.4.40
         version: 8.4.40
+      primeicons:
+        specifier: ^7.0.0
+        version: 7.0.0
       primevue:
         specifier: ^4.0.4
         version: 4.0.4(vue@3.4.35(typescript@5.1.6))
@@ -38,6 +41,9 @@ importers:
       tailwindcss:
         specifier: 3.4.7
         version: 3.4.7
+      tailwindcss-primeui:
+        specifier: ^0.3.4
+        version: 0.3.4(tailwindcss@3.4.7)
       vue:
         specifier: 3.4.35
         version: 3.4.35(typescript@5.1.6)
@@ -4389,6 +4395,9 @@ packages:
     resolution: {integrity: sha512-66hKPCr+72mlfiSjlEB1+45IjXSqvVAIy6mocupoww4tBFE9R9IhwwUGoI4G++Tc9Aq+2rxOt0RFU6gPcrte0A==}
     engines: {node: '>= 0.8'}
 
+  primeicons@7.0.0:
+    resolution: {integrity: sha512-jK3Et9UzwzTsd6tzl2RmwrVY/b8raJ3QZLzoDACj+oTJ0oX7L9Hy+XnVwgo4QVKlKpnP/Ur13SXV/pVh4LzaDw==}
+
   primevue@4.0.4:
     resolution: {integrity: sha512-1moEddbczJ1+yEyfeYQk3xOQB64iCjjM//f+HSXs6YrKVVC0QjPFx9XPNXrr2JjHlp+6D7EpPZtsmcrfA9jWkA==}
     engines: {node: '>=12.11.0'}
@@ -4914,6 +4923,11 @@ packages:
     resolution: {integrity: sha512-9wmhkleKWVjcGfHpc1/YvfADnvzpYMdr2/AM2e7FpMczPYEdluwM3AMXxHGzPUNbWfnSaerrmzqP4nDsTDvBxA==}
     peerDependencies:
       webpack: '*'
+
+  tailwindcss-primeui@0.3.4:
+    resolution: {integrity: sha512-5+Qfoe5Kpq2Iwrd6umBUb3rQH6b7+pL4jxJUId0Su5agUM6TwCyH5Pyl9R0y3QQB3IRuTxBNmeS11B41f+30zw==}
+    peerDependencies:
+      tailwindcss: '>=3.1.0'
 
   tailwindcss@3.4.7:
     resolution: {integrity: sha512-rxWZbe87YJb4OcSopb7up2Ba4U82BoiSGUdoDr3Ydrg9ckxFS/YWsvhN323GMcddgU65QRy7JndC7ahhInhvlQ==}
@@ -10156,6 +10170,8 @@ snapshots:
 
   pretty-hrtime@1.0.3: {}
 
+  primeicons@7.0.0: {}
+
   primevue@4.0.4(vue@3.4.35(typescript@5.1.6)):
     dependencies:
       '@primeuix/styled': 0.0.5
@@ -10771,6 +10787,10 @@ snapshots:
   systemjs-webpack-interop@2.3.7(webpack@5.93.0):
     dependencies:
       webpack: 5.93.0
+
+  tailwindcss-primeui@0.3.4(tailwindcss@3.4.7):
+    dependencies:
+      tailwindcss: 3.4.7
 
   tailwindcss@3.4.7:
     dependencies:

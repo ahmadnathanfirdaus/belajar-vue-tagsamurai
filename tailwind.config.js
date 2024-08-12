@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
+  darkMode: 'class',
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
@@ -8,5 +9,5 @@ module.exports = {
       colors: {},
     },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-primeui')],
 };

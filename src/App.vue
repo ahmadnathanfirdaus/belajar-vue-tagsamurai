@@ -1,6 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import LoginPage from '@/pages/LoginPage.vue';
+import AssetPage from '@/pages/AssetPage.vue';
+
+const token = localStorage.getItem('token');
+</script>
 
 <template>
-  <h1>Hello World!</h1>
-  <router-view />
+  <LoginPage v-if="token === null" />
+  <AssetPage v-else />
 </template>

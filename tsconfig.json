@@ -35,7 +35,7 @@
   "include": [
     "**/*.d.ts",
     "**/*.ts",
-    "src/**/*.vue",
+    "src/**/*.vue", "src/presets/index.js", "src/utils/registerComponents.util.js", "src/utils/registerComponents.util.js",
   ],
   "exclude": [
     "node_modules"

@@ -5,7 +5,7 @@ export default {
       'inline-flex items-center',
 
       // Spacing
-      'px-3 py-1 gap-2',
+      'px-2 gap-2',
 
       // Shape
       'rounded-[16px]',
@@ -16,7 +16,7 @@ export default {
     ],
   },
   label: {
-    class: 'leading-6 m-0',
+    class: 'leading-6 m-0 text-xs',
   },
   icon: {
     class: 'leading-6 mr-2',
